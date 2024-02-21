@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+font-family: 'Source-Sans-3';
+src:
+    url('/font/SourceSans3-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+html,
+body,
+#root,
+.app,
+.content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-family: 'Source-Sans-3', sans-serif;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.app {
+  display: flex;
+  position: relative;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#item {
+  transition: 0.3s;
+}
+#item:hover {
+  background-color: #555;
+}
